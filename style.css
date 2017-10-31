@@ -1,14 +1,15 @@
 *{
   margin: 0;
   padding: 0;
+  line-height: 100%;
   list-style: none;
   text-decoration: none;
 }
 
 #container{
-  width: 84%;
+  width: 75%;
   max-width: 1280px;
-  min-width: 512px;
+  min-width: 740px;
   margin: 0 auto;
 }
 
@@ -19,33 +20,39 @@ header {
   box-shadow: 0 4px 0.3125rem rgba(0,0,0,.3);
 }
 
-header h1{
-  position: absolute;
-  top: 4rem;
-  left: 3rem;
-  font-size: 2rem;
-  color: white;
-}
+  #logo {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    width: 3rem;
+  }
 
-#SiteNavigator {
-  position:absolute;
-  top:1rem;
-  right:0rem;
-  padding: 1rem 3rem ;
-}
+  header h1{
+    position: absolute;
+    top: 3rem;
+    left: 8rem;
+    font-size: 2rem;
+    color: white;
+  }
 
-#SiteNavigator ul{
-  display: flex;
-  flex-direction: row;
-}
+  #SiteNavigator {
+    position:absolute;
+    top:3rem;
+    right:3rem;
+  }
 
-#SiteNavigator ul li{
-  margin-right: 2rem;
-}
+  #SiteNavigator ul{
+    display: flex;
+    flex-direction: row;
+  }
 
-#SiteNavigator ul li a {
-  color: white;
-}
+  #SiteNavigator ul li{
+    margin-right: 1rem;
+  }
+
+  #SiteNavigator ul li a {
+    color: white;
+  }
 
 main{
   display: flex;
@@ -59,15 +66,15 @@ section{
   background: #EEE;
 }
 
-section h1{
-  margin-bottom: 1rem;
-}
+  section h1{
+    margin-bottom: 1rem;
+  }
 
-article{
-  padding: 1rem;
-  margin-bottom: 2rem;
-  background: #FFF;
-}
+  article{
+    padding: 1rem;
+    margin-bottom: 2rem;
+    background: #FFF;
+  }
 
 aside {
   width: 25%;
@@ -75,9 +82,13 @@ aside {
   background: #DDD;
 }
 
-aside h1{
-  margin-bottom: 1rem;
-}
+  aside h1{
+    margin-bottom: 1rem;
+  }
+
+  aside li{
+    margin-bottom: 0.5rem;
+  }
 
 footer {
   padding: 2rem 3rem;
