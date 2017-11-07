@@ -117,3 +117,14 @@ footer {
   font-size: 0.75rem;
   line-height: 150%;
 }
+
+/*******  SmartPhone ********/
+
+@media only screen and (max-width: 480px) {
+    #container{
+        width: 90%;
+    }
+    #aside{
+        display: none;
+    }
+ }
