@@ -11,19 +11,20 @@ body {
 }
 
 #container{
+  position:relative;
   width: 75%;
   max-width: 1280px;
   margin: 0 auto;
 }
 
 header {
-  position:relative;
   height: 9rem;
   background: #333;
   box-shadow: 0 4px 0.3125rem rgba(0,0,0,.3);
 }
 
   #logo {
+    display: block;
     position: absolute;
     top: 3rem;
     left: 3rem;
@@ -64,7 +65,7 @@ main{
 }
 
 section{
-  width: 75%;
+  flex: 3;
   padding: 3rem;
   background: #EEE;
 }
@@ -80,7 +81,7 @@ section{
   }
 
 aside {
-  width: 25%;
+  flex: 1;
   padding: 3rem;
   background: #DDD;
 }
@@ -125,5 +126,37 @@ footer {
 
 @media only screen and (max-width: 768px) {
 
-  
-}
+    #container{
+      width: 90%;
+    }
+
+    #logo{
+      top: 3rem;
+      left: inherit;
+      right: 3rem;
+      width: 1.5rem;
+    }
+
+    header h1{
+      font-size: 1.5rem;
+      left: 3rem;
+      top: 3rem;
+    }
+
+    #SiteNavigator {
+      top:5.2rem;
+      left:3rem;
+    }
+
+    #SiteNavigator li{
+      font-size: 0.8rem;
+    }
+
+    main{
+      display: block;
+    }
+
+    aside{
+      display: none;
+    }
+ }
