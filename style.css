@@ -6,6 +6,10 @@
   text-decoration: none;
 }
 
+body {
+   font-family: "Mplus 1p";
+}
+
 #container{
   width: 75%;
   max-width: 1280px;
