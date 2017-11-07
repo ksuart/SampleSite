@@ -121,15 +121,6 @@ footer {
 /*******  SmartPhone ********/
 
 @media only screen and (max-width: 768px) {
-    #container{
-      width: 90%;
-    }
+
   
-    #section{
-      width: 100%;
-    }
-  
-    aside{
-        display: none;
-    }
- }
+}
