@@ -65,7 +65,7 @@ main{
 }
 
 section{
-  flex: 3;
+  flex-grow: 3;
   padding: 3rem;
   background: #EEE;
 }
@@ -81,7 +81,7 @@ section{
   }
 
 aside {
-  flex: 1;
+  flex-grow: 1;
   padding: 3rem;
   background: #DDD;
 }
