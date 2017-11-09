@@ -26,21 +26,21 @@ header {
   #logo {
     display: block;
     position: absolute;
-    top: 3rem;
+    top: 4rem;
     left: 3rem;
     width: 3rem;
   }
 
   header h1{
     position: absolute;
-    top: 3rem;
+    top: 4rem;
     left: 7rem;
     color: white;
   }
 
   #SiteNavigator {
     position:absolute;
-    top:3rem;
+    top:2rem;
     right:3rem;
   }
 
