@@ -13,12 +13,12 @@ body {
 #container{
   position:relative;
   width: 75%;
-  max-width: 1280px;
+  max-width: 1080px;
   margin: 0 auto;
 }
 
 header {
-  height: 9rem;
+  height: 10rem;
   background: #333;
   box-shadow: 0 4px 0.3125rem rgba(0,0,0,.3);
 }
@@ -34,8 +34,7 @@ header {
   header h1{
     position: absolute;
     top: 3rem;
-    left: 8rem;
-    font-size: 2rem;
+    left: 7rem;
     color: white;
   }
 
@@ -60,13 +59,14 @@ header {
 
 main{
   display: flex;
-  flex-wrap：wrap;
-  justify-content:space-between;
+  flex-direction: row;
 }
 
 section{
-  flex-grow: 3;
-  padding: 3rem;
+  flex: 3;
+  padding-top: 3rem;
+  padding-left: 3rem;
+  padding-bottom: 3rem;
   background: #EEE;
 }
 
@@ -76,12 +76,13 @@ section{
 
   article{
     padding: 1rem;
+    margin-right: 3rem;
     margin-bottom: 2rem;
     background: #FFF;
   }
 
 aside {
-  flex-grow: 1;
+  flex: 1;
   padding: 3rem;
   background: #DDD;
 }
@@ -105,11 +106,9 @@ footer {
 
 .imageBox{
   float: left;
-  width: 8rem;
-  padding: 1.5rem;
-  margin-right: 1rem;
+  width: 40%;
+  margin-right: 10%;
   margin-bottom: 2rem;
-  background: #FFF;
 }
 
 .thumb {
@@ -122,41 +121,46 @@ footer {
   line-height: 150%;
 }
 
-/*******  SmartPhone ********/
+/*******  Tablet / SmartPhone ********/
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 720px) {
 
     #container{
-      width: 90%;
+      width: 100%;
+    }
+
+    header{
+      height: 17rem;
     }
 
     #logo{
-      top: 3rem;
-      left: inherit;
-      right: 3rem;
-      width: 1.5rem;
+      top: 4rem;
+      left:50%;
+      margin-left: -1.5rem;
     }
 
     header h1{
-      font-size: 1.5rem;
       left: 3rem;
-      top: 3rem;
+      top: 10rem;
     }
 
     #SiteNavigator {
-      top:5.2rem;
+      top:13rem;
       left:3rem;
     }
 
-    #SiteNavigator li{
-      font-size: 0.8rem;
-    }
 
     main{
-      display: block;
+      flex-direction: column;
     }
 
-    aside{
-      display: none;
+    /****** Image Box ******/
+
+    .imageBox{
+      float: none;
+      width: auto;
+      margin-right: 3rem;
+      margin-bottom: 2rem;
     }
- }
+
+}
