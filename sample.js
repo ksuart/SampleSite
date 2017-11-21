@@ -32,6 +32,4 @@ $( function(){
     $("#lists").slideToggle();
   });
 
-
-
 });
