@@ -5,22 +5,15 @@ function myFunction( col ){
 
 $( function(){
 
-  var win = $(window).width();
-  if(win > 640){
-    $("#lists").show();
-  }else{
-    $("#lists").hide();
-  }
-
   $("#button").click( function () {
     $("#lists").slideToggle();
   });
 
-  $(window).on("resize",function(){
-	var win = $(window).width();
-	if(win > 640){
-	  $("#lists").show();
-	}else{
+  $(window).resize(function(){  
+    var win = $(window).width();
+    if(win > 640){
+      $("#lists").show();
+    }else{
       $("#lists").hide();
     }
   });
