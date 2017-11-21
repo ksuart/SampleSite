@@ -18,6 +18,8 @@ body {
 }
 
 header {
+  position:relative;
+  z-index: 999;
   height: 10rem;
   background: #333;
   box-shadow: 0 4px 0.3125rem rgba(0,0,0,.3);
@@ -38,28 +40,29 @@ header {
     color: white;
   }
 
-  #SiteNavigator {
-    position:absolute;
-    top:2rem;
-    right:3rem;
-  }
+#SiteNavigator{
+  padding: 1rem;
+  background: #333;
+}
 
-  #SiteNavigator ul#button{
-    display: none;
-  }
+#SiteNavigator ul#button{
+  font-weight: 800;
+  display: none;
+}
 
-  #SiteNavigator ul#lists{
-    display: flex;
-    flex-direction: row;
-  }
+#SiteNavigator ul#lists{
+  display: flex;
+  flex-direction: row;
+  margin-left: 2rem;
+}
 
-  #SiteNavigator ul#lists li{
-    margin-right: 1rem;
-  }
+#SiteNavigator li{
+  margin-right: 1rem;
+}
 
-  #SiteNavigator ul li a {
-    color: white;
-  }
+#SiteNavigator a {
+  color: white;
+}
 
 main{
   display: flex;
@@ -79,6 +82,7 @@ section{
   }
 
   article{
+    min-height: 6rem;
     padding: 1rem;
     margin-right: 3rem;
     margin-bottom: 2rem;
@@ -95,6 +99,10 @@ aside {
     margin-bottom: 1rem;
   }
 
+  aside nav{
+    margin-bottom: 2rem;
+  }
+
   aside li{
     margin-bottom: 0.5rem;
   }
@@ -106,7 +114,6 @@ footer {
   color: white;
 }
 
-/****** Image Box ******/
 
 .imageBox{
   float: left;
@@ -125,7 +132,8 @@ footer {
   line-height: 150%;
 }
 
-/*******  Tablet / SmartPhone ********/
+
+/*******  SmartPhone ********/
 
 @media only screen and (max-width: 640px) {
 
@@ -134,29 +142,28 @@ footer {
     }
 
     header{
-      height: 17rem;
+      height: 18rem;
+      margin-bottom: 0;
     }
 
     #logo{
       width: 4rem;
-      top: 4rem;
+      top: 6rem;
       left:50%;
       margin-left: -2rem;
     }
 
     header h1{
       width: 100%;
-      top: 10rem;
+      top: 12rem;
       left: 0rem;
       text-align: center;
     }
 
     #SiteNavigator {
-      top:14rem;
-      left:0rem;
-      right:auto;
-      width: 100%;
-      background: black;
+      padding: 0;
+
+      background: #333;
     }
 
     #SiteNavigator ul#button{
@@ -165,6 +172,7 @@ footer {
     }
 
     #SiteNavigator ul#lists{
+      margin-left: 0;
       flex-direction: column;
     }
 
@@ -180,7 +188,6 @@ footer {
       flex-direction: column;
     }
 
-    /****** Image Box ******/
 
     .imageBox{
       float: none;
