@@ -1,28 +1,37 @@
+// JavaScript 基本練習
 function myFunction( col ){
   var obj = document.getElementById('ABC');
   obj.style.backgroundColor = col;
 }
 
-$( function(){
-
-  var win = $(window).width();
+// Window幅に応じたメニュー表示の変更
+function ShowAndHide(win){
   if(win > 640){
+    $("#button").hide();
     $("#lists").show();
   }else{
+    $("#button").show();
     $("#lists").hide();
   }
+}
 
+$( function(){
+  
+  // 初めてページを開いた時の状態チェック  
+  var win = $(window).width();
+  ShowAndHide(win);
+  
+  // Windowサイズが変更された時の状態チェック  
+  $(window).resize(function(){
+    var win = $(window).width();
+    ShowAndHide(win);
+  });
+
+  // MENUボタンクリック時のトグル動作
   $("#button").click( function () {
     $("#lists").slideToggle();
   });
 
-  $(window).resize(function(){
-    var win = $(window).width();
-    if(win > 640){
-      $("#lists").show();
-    }else{
-      $("#lists").hide();
-    }
-  });
+
 
 });
