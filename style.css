@@ -46,8 +46,8 @@ header {
 }
 
 #SiteNavigator ul#button{
+  color: white;
   font-weight: 800;
-  display: none;
 }
 
 #SiteNavigator ul#lists{
@@ -114,6 +114,7 @@ footer {
   color: white;
 }
 
+/****** Image Box ******/
 
 .imageBox{
   float: left;
@@ -132,8 +133,7 @@ footer {
   line-height: 150%;
 }
 
-
-/*******  SmartPhone ********/
+/*******  Tablet / SmartPhone ********/
 
 @media only screen and (max-width: 640px) {
 
@@ -162,13 +162,6 @@ footer {
 
     #SiteNavigator {
       padding: 0;
-
-      background: #333;
-    }
-
-    #SiteNavigator ul#button{
-      display: block;
-      color: white;
     }
 
     #SiteNavigator ul#lists{
@@ -187,7 +180,6 @@ footer {
     main{
       flex-direction: column;
     }
-
 
     .imageBox{
       float: none;
