@@ -138,19 +138,23 @@ footer {
     }
 
     #logo{
+      width: 4rem;
       top: 4rem;
       left:50%;
-      margin-left: -1.5rem;
+      margin-left: -2rem;
     }
 
     header h1{
-      left: 3rem;
+      width: 100%;
       top: 10rem;
+      left: 0rem;
+      text-align: center;
     }
 
     #SiteNavigator {
-      top:15rem;
+      top:14rem;
       left:0rem;
+      right:auto;
       width: 100%;
       background: black;
     }
@@ -166,7 +170,8 @@ footer {
 
     #SiteNavigator ul li{
       width: 100%;
-      padding: 1rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
       border-bottom: 1px solid gray;
       text-align: center;
     }
