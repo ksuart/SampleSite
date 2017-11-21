@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
-        <link rel="stylesheet" href="style.css">
-        <title>Sample Site</title>
-    </head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="sample.js"></script>
+    <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <title>Sample Site</title>
+  </head>
 
     <body>
 
       <div id="container">
 
-        <header>
+        <header id="ABC">
             <a href="index.html"><img id="logo" src="images/logo.png"></a>
-            <h1>gallery</h1>
-            <nav id="SiteNavigator">
-              <ul>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="gallery.html">GALLERY</a></li>
-                <li><a href="#">LINKS</a></li>
-              </ul>
-            </nav>
+            <h1>home</h1>
         </header>
+
+        <nav id="SiteNavigator">
+          <ul id="button">
+            <li>MENU</li>
+          </ul>
+          <ul id="lists">
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="#">LINKS</a></li>
+          </ul>
+        </nav>
 
         <main>
 
