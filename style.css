@@ -114,7 +114,6 @@ footer {
   color: white;
 }
 
-/****** Image Box ******/
 
 .imageBox{
   float: left;
@@ -133,7 +132,8 @@ footer {
   line-height: 150%;
 }
 
-/*******  Tablet / SmartPhone ********/
+
+/*********** SmartPhone ***********/
 
 @media only screen and (max-width: 640px) {
 
