@@ -5,11 +5,18 @@ function myFunction( col ){
 
 $( function(){
 
+  var win = $(window).width();
+  if(win > 640){
+    $("#lists").show();
+  }else{
+    $("#lists").hide();
+  }
+
   $("#button").click( function () {
     $("#lists").slideToggle();
   });
 
-  $(window).resize(function(){  
+  $(window).resize(function(){
     var win = $(window).width();
     if(win > 640){
       $("#lists").show();
