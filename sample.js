@@ -1,7 +1,20 @@
-// JavaScript 基本練習
-function myFunction( col ){
+//　ランダムな色値を発生させる関数
+function RandomColor(){
+  var col = Math.floor( Math.random() * 0xFFFFFF ).toString(16);
+  for( var i = col.length; i<6; i++ ) { col = "0" + col; }
+  return "#" + col;
+}
+
+// id="ABC" の部分の背景を指定された色に変更する
+function ChengeBG( col ){
   var obj = document.getElementById('ABC');
   obj.style.backgroundColor = col;
+}
+
+// id="ABC" の部分の背景色をランダムに変更する
+function ChengeBGRandom(){
+  var obj = document.getElementById('ABC');
+  obj.style.backgroundColor = RandomColor();
 }
 
 // Window幅に応じたメニュー表示の変更
