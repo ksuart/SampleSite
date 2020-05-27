@@ -1,0 +1,191 @@
+*{
+  margin: 0;
+  padding: 0;
+  line-height: 100%;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Noto Sans Japanese", "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, Meiryo, sans-serif;
+}
+
+#container{
+  position:relative;
+  width: 75%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+header {
+  position:relative;
+  z-index: 999;
+  height: 10rem;
+  background: #333;
+  box-shadow: 0 4px 0.3125rem rgba(0,0,0,.3);
+}
+
+  #logo {
+    display: block;
+    position: absolute;
+    top: 4rem;
+    left: 3rem;
+    width: 3rem;
+  }
+
+  header h1{
+    position: absolute;
+    top: 4rem;
+    left: 7rem;
+    color: white;
+  }
+
+#SiteNavigator{
+  padding: 1rem;
+  background: #333;
+}
+
+#SiteNavigator ul#button{
+  color: white;
+  font-weight: 800;
+}
+
+#SiteNavigator ul#lists{
+  display: flex;
+  flex-direction: row;
+  margin-left: 2rem;
+}
+
+#SiteNavigator li{
+  margin-right: 1rem;
+}
+
+#SiteNavigator a {
+  color: white;
+}
+
+main{
+  display: flex;
+  flex-direction: row;
+}
+
+section{
+  flex: 3;
+  padding-top: 3rem;
+  padding-left: 3rem;
+  padding-bottom: 3rem;
+  background: #EEE;
+}
+
+  section h1{
+    margin-bottom: 1rem;
+  }
+
+  article{
+    min-height: 6rem;
+    padding: 1rem;
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+    background: #FFF;
+  }
+
+aside {
+  flex: 1;
+  padding: 3rem;
+  background: #DDD;
+}
+
+  aside h1{
+    margin-bottom: 1rem;
+  }
+
+  aside nav{
+    margin-bottom: 2rem;
+  }
+
+  aside li{
+    margin-bottom: 0.5rem;
+  }
+
+footer {
+  padding: 2rem 3rem;
+  text-align: center;
+  background: #333;
+  color: white;
+}
+
+
+.imageBox{
+  float: left;
+  width: 25%;
+  margin-right: 8%;
+  margin-bottom: 2rem;
+}
+
+.thumb {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.notes {
+  font-size: 0.75rem;
+  line-height: 150%;
+}
+
+
+/*********** SmartPhone ***********/
+
+@media only screen and (max-width: 640px) {
+
+    #container{
+      width: 100%;
+    }
+
+    header{
+      height: 18rem;
+      margin-bottom: 0;
+    }
+
+    #logo{
+      width: 4rem;
+      top: 6rem;
+      left:50%;
+      margin-left: -2rem;
+    }
+
+    header h1{
+      width: 100%;
+      top: 12rem;
+      left: 0rem;
+      text-align: center;
+    }
+
+    #SiteNavigator {
+      padding: 0;
+    }
+
+    #SiteNavigator ul#lists{
+      margin-left: 0;
+      flex-direction: column;
+    }
+
+    #SiteNavigator ul li{
+      width: 100%;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid gray;
+      text-align: center;
+    }
+
+    main{
+      flex-direction: column;
+    }
+
+    .imageBox{
+      float: none;
+      width: auto;
+      margin-right: 3rem;
+      margin-bottom: 2rem;
+    }
+
+}

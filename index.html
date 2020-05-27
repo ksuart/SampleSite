@@ -1,13 +1,89 @@
 <!DOCTYPE html>
 <html lang="ja">
-     <head>
+
+    <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/sample.js"></script>
+        <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
+        <link href="css/lightbox.min.css" rel="stylesheet" >
+        <link href="css/style.css" rel="stylesheet" >
         <title>Sample Site</title>
     </head>
+
     <body>
-        <h1>見出し</h1>
-        <P>
-     　　 本文｜適当に文章を書いて下さい。
-        </P>
+
+      <div id="container">
+
+        <header id="ABC">
+            <a href="index.html"><img id="logo" src="images/logo.png"></a>
+            <h1>home</h1>
+        </header>
+
+        <nav id="SiteNavigator">
+          <ul id="button">
+            <li>MENU</li>
+          </ul>
+          <ul id="lists">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="#">LINKS</a></li>
+          </ul>
+        </nav>
+
+        <main>
+
+          <section>
+            <h1>お知らせ</h1>
+            <article>
+              <h1>2017.09.26</h1>
+              <p>香椎浜の朝は・・・</p>
+            </article>
+
+            <article>
+              <h1>2017.09.19</h1>
+              <p>天神３丁目の交差点・・・</p>
+            </article>
+
+            <article>
+              <h1>2017.09.12</h1>
+              <p>香椎駅には・・・・</p>
+            </article>
+          </section>
+
+          <aside>
+            <h1>関連リンク</h1>
+            <nav>
+              <ul>
+                <li><a href="#">Fine Arts</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Photography</a></li>
+              </ul>
+            </nav>
+
+            <h3>JavaScript 実験</h3>
+            <p>
+              <button onClick="ChengeBG('red')" >R</button>
+              <button onClick="ChengeBG('green')" >G</button>
+              <button onClick="ChengeBG('blue')" >B</button>
+            </p>
+            <p>
+              <button onClick="ChengeBGRandom()" >RANDOM</button>
+            </p>
+
+          </aside>
+
+        </main>
+
+        <footer>
+            (cc) http://www.example.com 2017
+        </footer>
+
+      </div>
+
     </body>
+
 </html>
